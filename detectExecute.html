@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <a class="btn blue far list class" href="file:///BWJOBS/JOBS/2016/16339/_P/">16339P</a>
+        
+        <a class="btn red  list class" href="file:///BWJOBS/JOBS/2016/">2016</a></div>
+</body>
+<script>
+
+// Firefox 1.0+
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+// Chrome 1+
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+if(isFirefox){
+    //You can use what ever to detect links, you can do it by tag and get every link. 
+    var linkmodify = document.getElementsByClassName("list class");
+    for (var i =0; i < linkmodify.length; i++){
+        var replacementLink = "";
+        link = linkmodify[i].href;
+         
+         for(var j = 0; j < link.length; j++){
+             if(j == 5){
+                 replacementLink += '//';
+             }
+             replacementLink += link[j];
+         }
+         linkmodify[i].href = replacementLink;
+         
+     }
+}
+</script>
+
+</html>
